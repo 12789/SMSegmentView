@@ -102,6 +102,7 @@ open class SMSegment: UIView {
         self.label.frame = CGRect(x: imageViewFrame.origin.x + imageViewFrame.size.width + distanceBetween, y: verticalMargin, width: self.label.frame.size.width, height: self.frame.size.height - verticalMargin * 2)
     }
     
+    
     // MARK: Selections
     internal func setSelected(_ selected: Bool) {
         self.isSelected = selected

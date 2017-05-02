@@ -57,7 +57,7 @@ open class SMSegmentView: UIControl {
     }
 
     fileprivate var segments: [SMSegment] = []
-    open var selectedSegment: SMSegment?
+    fileprivate var selectedSegment: SMSegment?
 
 
     // INITIALISER
@@ -155,6 +155,10 @@ open class SMSegmentView: UIControl {
     open override func layoutSubviews() {
         super.layoutSubviews()
         self.updateSegmentsLayout()
+    }
+    
+    open func updateSelectedDisplay(){
+        selectedSegment?.setSelected(true)
     }
 
     fileprivate func updateSegmentsLayout() {
