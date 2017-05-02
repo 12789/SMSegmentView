@@ -57,7 +57,7 @@ open class SMSegmentView: UIControl {
     }
 
     fileprivate var segments: [SMSegment] = []
-    fileprivate var selectedSegment: SMSegment?
+    open var selectedSegment: SMSegment?
 
 
     // INITIALISER
